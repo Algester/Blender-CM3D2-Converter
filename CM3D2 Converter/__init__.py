@@ -313,24 +313,25 @@ def register():
     bpy.types.TEXT_HT_header.append(misc_TEXT_HT_header.menu_func)
     bpy.types.VIEW3D_MT_pose_apply.append(misc_VIEW3D_MT_pose_apply.menu_func)
 
-    system = compat.get_system(bpy.context)
-    if not system.use_international_fonts:
-        system.use_international_fonts = True
-    if not system.use_translate_interface:
-        system.use_translate_interface = True
-    try:
-        import locale
-        if system.language == 'DEFAULT' and locale.getdefaultlocale()[0] != 'ja_JP':
-            system.language = 'en_US'
-    except:
-        pass
+# This is the Language Locale    
+#    system = compat.get_system(bpy.context)
+#   if not system.use_international_fonts:
+#        system.use_international_fonts = True
+#    if not system.use_translate_interface:
+#        system.use_translate_interface = True
+#    try:
+#        import locale
+#        if system.language == 'DEFAULT' and locale.getdefaultlocale()[0] != 'ja_JP':
+#            system.language = 'en_US'
+#    except:
+#        pass
 
-    try:
-        import locale
-        if locale.getdefaultlocale()[0] != 'ja_JP':
-            unregister()
-    except:
-        pass
+#    try:
+#        import locale
+#        if locale.getdefaultlocale()[0] != 'ja_JP':
+#            unregister()
+#    except:
+#        pass
 
 
 # プラグインをアンインストールしたときの処理
