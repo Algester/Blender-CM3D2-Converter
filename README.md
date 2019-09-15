@@ -1,3 +1,5 @@
+Documentation for CM3D2 Converter for Blender 2.8 I guess... just commented the ja_JP part of the code so it can be "internationalized"
+
 # Blender-CM3D2-Converter
 　3Dアダルトゲーム「[カスタムメイド3D2](http://kisskiss.tv/cm3d2/)」「[カスタムオーダーメイド3D2](http://com3d2.jp/)」で使用されるモデルファイル形式(.model)を  
 　フリー3D統合環境である「[Blender](https://www.blender.org/)」で扱うためのアドオンです。  
